@@ -98,7 +98,7 @@ def find_records():
     if request.method == 'POST':
         keyword = request.form['username']
         persons = find_persons(keyword)
-        return render_template('index.html', persons=persons, keyword=keyword, show_result=True, developer_name='ALIhan')
+        return render_template('index.html', persons=persons, keyword=keyword, show_result=True, developer_name='ALI')
     else:
         return render_template('index.html', show_result=False, developer_name='ALI')
 
